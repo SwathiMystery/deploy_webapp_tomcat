@@ -12,11 +12,12 @@ Getting Started
 - Edits to the script
 This script does check out on Bitbucket repositories using its REST API.
 This may be replaced by Github's REST API.
-{TEAM_ACCOUNT_NAME} is the team account name on Bitbucket
-{REPO_USER_NAME} is the Bitbucket account user name
-{REPO_PASSWORD_NAME} is the Bitbucket account password
+ - {TEAM_ACCOUNT_NAME} is the team account name on Bitbucket
+ - {REPO_USER_NAME} is the Bitbucket account user name
+ - {REPO_PASSWORD_NAME} is the Bitbucket account password
 
 If you have custom settings.xml for maven build, then you may handle that in
+
 <code>
 	if [ ! -f $HOME/.m2/settings.xml ]; then
 			echo "There is no settings.xml in ~/.m2/. Do you wanna set it up? Add here."
@@ -24,5 +25,9 @@ If you have custom settings.xml for maven build, then you may handle that in
 </code>
 
 - Executing the script
+
+<code>
 sudo ./deploy.sh -r REPO_NAME [-m MODULE_NAME]
-The usage is printed when you the run the script and it guides you in the execution.
+</code>
+
+The usage is printed when you the run the script and it guides you during the execution.
